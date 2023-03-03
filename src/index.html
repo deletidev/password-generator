@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Inconsolata:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <title>Password Generator</title>
+  </head>
+  <body class="flex flex-align-center">
+    <main class="container">
+      <h1 class="title-xxl">Password Generator</h1>
+      <div class="generator border-radius">
+        <div class="generator__pass border-radius">
+          <h3 id="password">PTMNOR</h3>
+          <img
+            id="generator-copy"
+            class="generator__icon"
+            src="./assets/images/copied.svg"
+            alt=""
+          />
+          <p id="generator-error" class="generator__message generator__error">
+            The password must have at least 1 character type and a minimum
+            length of 6
+          </p>
+          <p id="generator-copied" class="generator__message generator__copied">
+            Text copied to clipboard!
+          </p>
+        </div>
+
+        <form id="form-generator" class="generator__charact flex flex-colum">
+          <label for="generator-length" class="generator__value-label"
+            >Character Lenght
+            <span id="generator-value" class="generator__value">6</span></label
+          >
+          <input
+            type="range"
+            name=""
+            id="generator-length"
+            class="generator__length"
+            value="6"
+            step="1"
+            min="0"
+            max="15"
+          />
+
+          <label>
+            <input
+              type="checkbox"
+              name="uppercase"
+              id="generator-uppercase"
+              class="accent-input"
+              checked
+            />
+            Include Uppercase Letters</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="lowercase"
+              id="generator-lowercase"
+              class="accent-input"
+            />
+            Include Lowercase Letters</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="numbers"
+              id="generator-numbers"
+              class="accent-input"
+            />
+            Include Numbers</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="symbols"
+              id="generator-symbols"
+              class="accent-input"
+            />
+            Include Symbols</label
+          >
+          <p class="generator__strenght">
+            Strenght:
+            <span
+              id="generator-strenght-value"
+              class="generator__strenght-value"
+              data-state="optimum"
+              >Too Weak</span
+            >
+          </p>
+          <input
+            id="button-generete"
+            class="button border-radius"
+            type="submit"
+            value="Generate"
+          />
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

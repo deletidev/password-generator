@@ -1,0 +1,37 @@
+@use '../mixins/responsive.scss' as *;
+
+.container {
+  width: 85%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex-colum {
+  flex-direction: column;
+}
+.flex-align-center {
+  align-items: center;
+}
+
+.title-xxl {
+  font-family: var(--ff-h1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--fs-xxl);
+  margin-bottom: 1.1em;
+
+  @include maxresponsive(420px) {
+    --fs-xxl: 12vw;
+  }
+}
+
+.border-radius {
+  border-radius: 3px;
+}
+.accent-input {
+  accent-color: var(--color-bg-btn);
+}

@@ -1,0 +1,85 @@
+@use '../mixins/responsive.scss' as *;
+
+.generator {
+  padding: 2em 1em;
+  @include responsive(400px) {
+    padding: 2em;
+  }
+  background-color: var(--color-bg-primary);
+  &__pass {
+    background-color: var(--color-bg-terciary);
+    padding: 0.8em;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    object-fit: contain;
+    margin-left: 0.7em;
+    &--update {
+      margin-top: 0.125rem;
+      height: 1.25rem;
+    }
+  }
+  &__message {
+    position: absolute;
+    display: none;
+    top: 100%;
+    line-height: 0.9;
+    left: 0;
+    padding-top: 0.3em;
+    font-size: var(--fs-sm);
+  }
+  &__error {
+    color: var(--color-red);
+    &--active {
+      display: block;
+    }
+  }
+  &__copied {
+    color: var(--color-green);
+    &--active {
+      display: block;
+    }
+  }
+
+  &__charact {
+    padding-top: 2.8em;
+  }
+  &__length {
+    accent-color: var(--color-bg-btn);
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+  &__value-label {
+    position: relative;
+    line-height: var(--fs-md);
+  }
+  &__value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: var(--fs-md);
+  }
+  &__strenght {
+    margin-top: 0.8em;
+    margin-bottom: 2.3em;
+  }
+  &__strenght-value {
+    &[data-state='short'] {
+      color: var(--color-red);
+    }
+    &[data-state='optimum'] {
+      color: var(--color-orange);
+    }
+    &[data-state='strong'] {
+      color: var(--color-green);
+    }
+  }
+}
