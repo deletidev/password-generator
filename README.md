@@ -4,7 +4,7 @@
 
 ## Ejemplo en vivo
 
-- [Ver página](https://deletidev.github.io/Blogr--FrontendMentor/)
+- [Ver página](https://password-generator-aqie.onrender.com)
 
 
 ## Descripción 📑
