@@ -9,7 +9,7 @@
 
 ## Descripción 📑
 
-Página web estática responsive, desafío de Frontend Mentor.
+Página web generadora de contraseñas aleatorias.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
