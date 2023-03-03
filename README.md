@@ -38,7 +38,7 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 
 **Leticia de la Osa**
 
-- [contacto@deletidev.com](contacto@deletidev.com)
+- [contacto@deletidev.com](mailto:contacto@deletidev.com)
 - [LinkedIn](https://www.linkedin.com/in/deletidev)
 - [Mi porfolio web](https://deletidev.com/)
 
